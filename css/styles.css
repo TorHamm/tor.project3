@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Heading';
+    src: url('../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    place-content: center;
+    background-color: hsl(0, 0%, 8%);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2, p{
+    font-size: 14px;
+}
+
+h1, h2, p{
+
+    margin:2px;
+}
+
+main {
+    align-content: center;
+}
+
+.card {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 40px;
+    row-gap: 24px;
+    border-radius: 12px;
+    color: white;
+    background-color: hsl(0, 0%, 12%);
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic img{
+    width: 88px;
+    border-radius: 44px;
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 4px;
+
+}
+
+.name {
+    font-family: 'Heading';
+}
+
+.location {
+    font-family: 'Bold';
+    color: hsl(75, 94%, 57%);
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    font-family: 'Regular';
+    padding: 0 24px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.links button {
+    font-family: 'Bold';
+    font-size: 14px;
+    padding: 16px 0;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.links button:hover {
+    cursor: pointer;
+    transition: .2s;
+    color:hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
+}
